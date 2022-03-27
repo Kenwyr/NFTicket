@@ -34,7 +34,7 @@ namespace NFT_API.Controllers
             return View(publisherDetails);
         }
 
-        //GET: producers/create
+        //GET: Publisher/create
         public IActionResult Create()
         {
             return View();
@@ -62,7 +62,7 @@ namespace NFT_API.Controllers
             return View(publisher);
         }
 
-        //GET: producers/delete/1
+        //GET: Publisher/delete/1
         public async Task<IActionResult> Delete(int id)
         {
             var publisherDetails = await _service.GetByIdAsync(id);

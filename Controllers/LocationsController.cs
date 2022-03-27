@@ -25,8 +25,8 @@ namespace NFT_API.Controllers
             var allLocations = await _service.GetAllAsync();
             return View(allLocations);
         }
-        
-        //Get: Cinemas/Create
+
+        //Get: Locations/Create
         public IActionResult Create()
         {
             return View();

@@ -57,9 +57,9 @@ namespace NFT_API.Controllers
         //Get: Artist/Edit/1
         public async Task<IActionResult> Edit(int id)
         {
-            var ArtistDetails = await _service.GetByIdAsync(id);
-            if (ArtistDetails == null) return View("NotFound");
-            return View(ArtistDetails);
+            var artistDetails = await _service.GetByIdAsync(id);
+            if (artistDetails == null) return View("NotFound");
+            return View(artistDetails);
         }
 
         [HttpPost]

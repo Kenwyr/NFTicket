@@ -54,7 +54,7 @@ namespace NFT_API.Controllers
             return View(eventDetail);
         }
 
-        //GET: Movies/Create
+        //GET: Events/Create
         public async Task<IActionResult> Create()
         {
             var eventDropdownsData = await _service.GetNewEventDropdownsValues();
@@ -83,7 +83,7 @@ namespace NFT_API.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        //GET: Movies/Edit/1
+        //GET: Events/Edit/1
         public async Task<IActionResult> Edit(int id)
         {
             var eventDetails = await _service.GetEventByIdAsync(id);
